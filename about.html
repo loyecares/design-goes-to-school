@@ -2,11 +2,12 @@
 <html>
 <head>
 	<title>DG2S</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta  name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 <body>
-	<nav>
+	<nav class="hidden-xs">
 		<div class="container">
 			<div class="col-4">
 				DG2S
@@ -21,19 +22,30 @@
 			</div>
 		</div>
 	</nav>
+	<div class="hidden-lg">
+		<div class="mobile-nav closed" id="mobile-nav">
+			<a href="index.html"> Home |</a>
+			<a href="about.html"> About |</a>
+			<a href=""> Gallery |</a>
+			<a href=""> Donate |</a>
+			<a href=""> Contact Us |</a>
+			<a href=""> Blog</a>
+			<a href="javascript:void(0)" onclick="toggle()"><i class="fa fa-bars" id="togg"></i></a>
+	    </div>
+	</div>
 	<div class="bg-landing-about">
 		<div class="dark-scarf">
-			<div class="col-12 down-10 text-middle">
+			<div class="col-12 xs-col-12 down-10 xs-down-40 text-middle">
 				<span class="white px30"> Home <span class="color-code-1"> =></span> About</span>
 			</div>
 		</div>
 	</div>
-		<div class="mother down-5">
-			<div class="col-6 off-3">
+		<div class="mother down-5 xs-down-15">
+			<div class="col-6 off-3 xs-text-middle">
 				<span class="px40"> About DG2S</span>
 			</div>
 			<div class="col-8 off-2 down-5">
-				<div>
+				<div class="container">
 					<span class="faded">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -43,7 +55,7 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</span>
 				</div>
-				<div class="down-5">
+				<div class=" container xs-down-5 down-5">
 					<span class="faded">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -56,12 +68,12 @@
 			</div>
 		</div>
 		<div class="mother">
-			<div class="text-middle down-1">
+			<div class="text-middle down-1 xs-down-5">
 				<span class="px30 color-code-2"> Meet Our Team</span>
 			</div>
-			<div class="container down-1">
+			<div class="container down-1 ">
 				<div class="col-4">	
-					<div class="card">
+					<div class="card xs-down-5">
 					<div class="container">	
 						<div class="img-container-3 down-5">
 							<img src="images/pic6.jpg">
@@ -81,7 +93,7 @@
 					</div>
 				</div>
 				<div class="col-4">	
-					<div class="card ">
+					<div class="card xs-down-5">
 					<div class="container">	
 						<div class="img-container-3 down-5">
 							<img src="images/pic6.jpg">
@@ -101,7 +113,7 @@
 					</div>
 				</div>
 				<div class="col-4">	
-					<div class="card ">
+					<div class="card xs-down-5">
 					<div class="container">	
 						<div class="img-container-3 down-5">
 							<img src="images/pic6.jpg">
@@ -122,11 +134,12 @@
 				</div>
 			</div>
 		</div>
-	<div class="mother bg-color-code-1 down-5">	
+	<div class="mother bg-color-code-1 down-5 xs-down-10">	
 		<div class="col-12 text-middle down-1 up-1">
 			<span class=" white "> &copy <span>2019</span>  | DG2S  </span>	
 		</div>
 
 	</div>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
