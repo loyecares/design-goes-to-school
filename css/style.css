@@ -7,7 +7,6 @@ body{
 	font-family: helvetica,arial,sans-serif;
 
 }
-
 nav{
 	background-color: #43B985;
 	height: 60px;
@@ -19,8 +18,17 @@ nav a{
 	text-decoration: none;
 	color: #fff;
 }
+ul li{
+	margin: 0px;
+}
 a{
 	text-decoration: none;
+}
+nav a:last-child{
+	color: ;
+	padding: 10px 30px !important;
+	background-color: #969685;
+	border-radius: 5px;
 }
 .mobile-nav{
 	width: 80%;
@@ -345,6 +353,10 @@ a{
 .xs-text-middle{
 	text-align: center;
 }
+.xs-container{
+	width: 94% !important;
+	margin-left: 3%;
+}
 .bg-landing{
 	width: 100%;
 	height: 550px;
@@ -359,6 +371,10 @@ a{
 	background-attachment: fixed;
 }
 
+.xs-px40{
+	font-size: 40px !important;
+}
+
 .hidden-xs{
 	display: none;
 }
@@ -366,6 +382,43 @@ a{
 	width: 100%;
 	height: 300px !important;
 	overflow: hidden;
+}
+.animated_spin{
+	position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 100px !important;
+    color: #43B985;
+  
+}
+
+.shape-circle{
+	display: none;
+	position: absolute;
+	left: 310px;
+	bottom: 75px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(67, 185, 133, 0.3);
+    transform: rotate(68deg);
+}
+
+.shape-circle-2{
+	
+	position: absolute;
+	left: -12% !important;
+	top: 2% !important;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50%;
+    background-color: rgba(67, 185, 133, 0.3);
+    transform: rotate(65deg);
+    transform-origin: 100% 50%;
+    overflow: hidden;
+}
+.shape-triangle{
+	display: none;
 }
 
 }
@@ -390,6 +443,22 @@ a{
 .text-middle{
 	text-align: center;
 }
+/*.animated_spin{
+	position: absolute;
+    display: inline-block;
+    width: 2px;
+    height: 200px;
+    background-color: #fff;  
+}*/
+.animated_spin{
+	position: absolute;
+    display: inline-block;
+    
+    width: 120px;
+    height: 300px;
+    color: #43B985;
+  
+}
 .bg-landing{
 	width: 100%;
 	height: 550px;
@@ -399,8 +468,8 @@ a{
 .bg-landing-2{
 	width: 100%;
 	height: 300px;
-	background-image: url(../images/pic6.jpg);
-	background-size: cover;
+	background-image: url(../images/pic13.jpg);
+	background-size: contain;
 	background-attachment: fixed;
 }
 .bg-landing-about{
@@ -410,6 +479,16 @@ a{
 	background-size: cover;
 	background-attachment: fixed;
 }
+.bg-landing-gallery{
+	width: 100%;
+	height: 300px;
+	background-image: url(../images/pic11.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.black{
+	color: black;
+}
 
 .dark-scarf{
 	width: 100%;
@@ -417,6 +496,7 @@ a{
 	background-color: rgba(0, 0, 0, 0.7);
 	background-attachment: fixed;
 }
+
 .px10{
 	font-size: 10px;
 }
@@ -450,8 +530,21 @@ a{
 .bg-color-code-1{
 	background-color: #43B985;
 }
+.bg-colordrop-code-1{
+	position: absolute;
+	bottom: 0;
+	left: -105px;
+	background-color: rgba(67, 185, 133, 0.3);
+	height: 400px;
+	width: 300px;
+	border-radius: 50%;
+	transform: rotate(45deg);
+}
 .border-color-code-1{
 	border: 2px solid #43B985;
+}
+.pic-border-color-code-2{
+	border: 1px solid rgba(150, 150, 133,0.7);
 }
 .color-code-2{
 	color: #969685;
@@ -471,6 +564,54 @@ a{
 .border-color-code-3{
 	border: 2px solid #ace600;
 }
+.border-down{
+	border-bottom: 2px solid #969685;
+}
+.shape-triangle{
+	position: absolute;
+	right: 0;
+	top: 5%;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 100px solid rgba(67, 185, 133, 0.3);
+    
+}
+/**.shape-rectangle{
+	position: absolute;
+	float: right;
+	right: 0;
+	bottom: 0%;
+	margin-right: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(150, 150, 133,0.5);
+    transform: rotate(68deg);
+} **/
+.shape-circle{
+	position: absolute;
+	left: 310px;
+	bottom: 75px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(67, 185, 133, 0.3);
+    transform: rotate(68deg);
+}
+
+.shape-circle-2{
+	position: absolute;
+	left: -20%;
+	top: 0;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: rgba(67, 185, 133, 0.3);
+    transform: rotate(65deg);
+    transform-origin: 100% 50%;
+    overflow: hidden;
+}
 .btn-sm{
 	padding: 10px 30px;
 	display: inline-block;
@@ -488,6 +629,7 @@ a{
 	width: 100%;
 	height: 580px;
 	overflow: hidden;
+
 }
 
 .img-container img{
@@ -510,9 +652,24 @@ a{
 	width: 100%;
 	height: 200px;
 	overflow: hidden;
+	transform: skew(-10deg);
+	
 }
 
 .img-container-3 img{
+	width: 100%;
+	height: auto;
+
+}
+
+.img-container-4{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	
+}
+
+.img-container-4 img{
 	width: 100%;
 	height: auto;
 
@@ -529,5 +686,58 @@ a{
 	width: 94%;
 	margin-left: 3%;
 	float: left;
-	box-shadow: 0px 2px 16px rgba(0, 240, 0, 0.1);
+	box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+}
+input[type=text]{
+	width: 100%;
+	padding: 10px;
+}
+input[type=submit]{
+	border:0px;
+	color:white;
+}
+textarea{
+	width: 93%;
+	height: 200px;
+}
+
+/** gallery css **/
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 24%; /* IE10 */
+  flex: 24%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
